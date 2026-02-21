@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Barbershop Business</title>
+  <meta name="description" content="Contact us for booking and inquiries." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="brand-badge">✂</div>
+      <div>Barbershop Business</div>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html#about">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#book">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn ghost" href="tel:+639001112222">Call</a>
+      <a class="btn primary" href="https://m.me/yourpage" target="_blank" rel="noreferrer">Message</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Contact</h2>
+        <p>Send an inquiry or book your next appointment.</p>
+      </div>
+      <a class="btn" href="index.html">Back to Home</a>
+    </div>
+
+    <div class="split">
+      <div class="card">
+        <div class="card-pad">
+          <span class="pill">Send a message</span>
+
+          <!-- Formspree: replace YOUR_FORM_ID after you create it -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-grid" style="margin-top:1rem;">
+            <div class="input">
+              <label>Name</label>
+              <input name="name" placeholder="Your name" required />
+            </div>
+            <div class="input">
+              <label>Phone</label>
+              <input name="phone" placeholder="09xx xxx xxxx" required />
+            </div>
+            <div class="input full">
+              <label>Email (optional)</label>
+              <input name="email" type="email" placeholder="you@email.com" />
+            </div>
+            <div class="input full">
+              <label>Message</label>
+              <textarea name="message" placeholder="Hi! I want to book a haircut..." required></textarea>
+            </div>
+
+            <div class="full" style="display:flex; gap:.7rem; flex-wrap:wrap;">
+              <button class="btn primary" type="submit">Send Inquiry</button>
+              <a class="btn" href="tel:+639001112222">Call Now</a>
+              <a class="btn ghost" href="https://maps.google.com/?q=Your+Address" target="_blank" rel="noreferrer">Directions</a>
+            </div>
+          </form>
+
+          <div class="divider" style="height:1px;background:rgba(255,255,255,.08);margin:1.2rem 0;"></div>
+          <p style="margin:0;color:var(--muted)">
+            <b style="color:var(--text)">Address:</b> Your Address Here<br>
+            <b style="color:var(--text)">Hours:</b> 10:00 AM – 9:00 PM<br>
+            <b style="color:var(--text)">Phone:</b> +63 900 111 2222
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <iframe class="map"
+          src="https://www.google.com/maps?q=Manila&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="card" style="margin-top:1rem;">
+          <div class="cta-band">
+            <div>
+              <span class="pill">Fast booking</span>
+              <h3>Prefer Messenger?</h3>
+              <p>We reply quickly for available slots.</p>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="https://m.me/yourpage" target="_blank" rel="noreferrer">Message Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="small">
+      <b style="color:var(--text)">Barbershop Business</b><br>
+      Your Address Here • Open 10AM–9PM
+    </div>
+    <div class="badge-links">
+      <a class="btn ghost" href="services.html">Services</a>
+      <a class="btn ghost" href="https://facebook.com/yourpage" target="_blank" rel="noreferrer">Facebook</a>
+      <a class="btn ghost" href="https://maps.google.com/?q=Your+Address" target="_blank" rel="noreferrer">Directions</a>
+    </div>
+    <div class="small">© <span id="year"></span> Barbershop Business</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
